@@ -5,7 +5,7 @@
 
 int main(void) {
   /* set pin 5 of PORTB for output*/
-  DDRB  = DDRB | (1 << DDB5);
+  DDRB = DDRB | (1 << DDB5);
 
   while (1) {
     /* set pin 5 high to turn led on */
