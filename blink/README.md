@@ -1,6 +1,6 @@
 # Blink
 
-Bare metal blink example for the ATmega328P microcontroller (Arduino UNO) using the avr-gcc toolchain.
+Bare metal blink example for the ATmega328P microcontroller.
 
 ## Installation
 
