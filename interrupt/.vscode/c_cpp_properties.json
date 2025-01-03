@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/src/**",
+        "/usr/local/Cellar/avr-gcc/*/lib/avr-gcc/*/avr/include"
+      ],
+      "defines": ["__AVR_ATmega328P__"],
+      "compilerPath": "/opt/homebrew/bin/avr-gcc"
+    }
+  ],
+  "version": 4
+}
