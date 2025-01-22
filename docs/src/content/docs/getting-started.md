@@ -1,9 +1,7 @@
 ---
-title: Getting started
+title: Setup
 description: Learn the fundamentals of ATmega328P microcontroller programming
 ---
-
-The ATmega328P is a versatile 8-bit microcontroller from Microchip Technology, widely recognized for its balance of performance, power efficiency, and ease of use. Built on the AVR architecture, it features a rich instruction set and a robust design tailored for embedded systems and hobbyist applications.
 
 To simplify getting started with the ATmega328P, we recommend using a development board like the Arduino Uno instead of wiring the microcontroller directly to a breadboard. This allows you to focus on learning the basics of programming and interfacing with the microcontroller without worrying about the hardware setup.
 
@@ -18,7 +16,7 @@ Before you begin, ensure you have the following:
 
 ## Installation
 
-To set up your development environment, use Homebrew to install the AVR-GCC toolchain. Run the following commands:
+To set up your development environment, use Homebrew to install the `avr-gcc` toolchain. Run the following commands:
 
 ```zsh
 tap osx-cross/avr

@@ -1,4 +1,4 @@
-# Dim LED
+# Pulse Width Modulation
 
 Dim an LED using PWM on an ATmega328P microcontroller.
 
