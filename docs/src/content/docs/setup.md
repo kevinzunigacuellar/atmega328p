@@ -1,6 +1,6 @@
 ---
-title: Setup
-description: Learn the fundamentals of ATmega328P microcontroller programming
+title: Getting Started with ATmega328P
+description: Setting up the development environment for ATmega328P
 ---
 
 To simplify getting started with the ATmega328P, we recommend using a development board like the Arduino Uno instead of wiring the microcontroller directly to a breadboard. This allows you to focus on learning the basics of programming and interfacing with the microcontroller without worrying about the hardware setup.

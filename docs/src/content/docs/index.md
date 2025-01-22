@@ -9,6 +9,6 @@ hero:
     alt: A robot holding a microcontroller with a chip on it
   actions:
     - text: Get started
-      link: /getting-started/
+      link: /introduction/
       icon: right-arrow
 ---
