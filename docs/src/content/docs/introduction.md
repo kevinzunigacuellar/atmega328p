@@ -22,6 +22,7 @@ The microcontroller interacts with the outside world through its input/output (I
 Microcontrollers are the core of embedded systems, enabling interaction between the digital world and the physical environment. This interaction is achieved primarily through GPIO (General Purpose Input/Output) and peripherals. Together, they form the communication bridge that allows microcontrollers to sense, control, and communicate with external devices.
 
 ### GPIO (General Purpose Input/Output)
+
 GPIO pins are the microcontroller's most basic and versatile communication tools. These pins can be configured as:
 - Inputs: To read digital or analog signals from external components such as switches, sensors, or buttons.
 - Outputs: To send digital signals to control devices like LEDs, buzzers, or relays.
@@ -33,6 +34,7 @@ GPIO pins are called "general purpose" because they are not tied to any specific
 Some GPIO pins also have extended functionality, such as supporting interrupts for real-time responsiveness or providing analog capabilities like ADC (Analog-to-Digital Conversion) and PWM (Pulse Width Modulation).
 
 ### Peripherals
+
 While GPIO pins handle basic input and output tasks, peripherals enhance the microcontroller's ability to perform specialized and complex operations. These are hardware modules integrated into the microcontroller that provide additional functionality. Common peripherals include:
 - Communication Protocols: Such as UART, SPI, and I²C, enabling the microcontroller to exchange data with other devices like sensors, displays, or computers.
 - Timers and PWMs: For generating precise time delays, controlling motors, or dimming lights.

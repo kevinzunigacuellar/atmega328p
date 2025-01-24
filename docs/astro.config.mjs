@@ -14,7 +14,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Start here",
-          items: ["introduction", "setup"],
+          items: ["introduction", "setup", "gpio"],
         },
       ],
     }),
