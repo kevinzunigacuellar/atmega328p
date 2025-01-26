@@ -1,5 +1,5 @@
 ---
-title: I/O Ports in Arduino Uno
+title: GPIO
 description: A comprehensive guide to I/O ports and their configuration in the Arduino Uno.
 ---
 
@@ -8,7 +8,7 @@ The Arduino Uno provides input/output (I/O) ports that enable the microcontrolle
 - **PORTB**: Controls digital pins D8 to D13.
 
   | Pin Number | Port Bit |
-  |------------|----------|
+  | ---------- | -------- |
   | D8         | PB0      |
   | D9         | PB1      |
   | D10        | PB2      |
@@ -19,7 +19,7 @@ The Arduino Uno provides input/output (I/O) ports that enable the microcontrolle
 - **PORTC**: Controls analog pins A0 to A5.
 
   | Pin Number | Port Bit |
-  |------------|----------|
+  | ---------- | -------- |
   | A0         | PC0      |
   | A1         | PC1      |
   | A2         | PC2      |
@@ -30,7 +30,7 @@ The Arduino Uno provides input/output (I/O) ports that enable the microcontrolle
 - **PORTD**: Controls digital pins D0 to D7.
 
   | Pin Number | Port Bit |
-  |------------|----------|
+  | ---------- | -------- |
   | D0         | PD0      |
   | D1         | PD1      |
   | D2         | PD2      |
@@ -56,7 +56,7 @@ PORTB |= (1 << PB0); // Set D8 (PB0) HIGH
 ```
 
 :::note[Bitwise operators]
-The bitwise operators `|` and `<<` are used to manipulate individual bits in the registers. If you are not familiar with them, read the [bitwise operators page](/bitwise-operator).
+The bitwise operators `|`, `^`, and `<<` are used to manipulate individual bits in the registers. If you are not familiar with them, read the [bitwise operators section](/concepts#bitwise-operators).
 :::
 
 ## Blinking an LED
@@ -72,25 +72,21 @@ Connect an LED to pin D5 with a current-limiting resistor. Assuming that the dio
 
 ### Code
 
+This code snippet configures pin D5 as an output and toggles the pin state to blink the LED. The `_delay_ms` function imported from `utils/delay.h` is used to introduce a delay between turning the LED on and off. `avr/io.h` is included to access the I/O registers and macros.
+
 ```c
 #include <avr/io.h>
 #include <util/delay.h>
 
 #define BLINK_DELAY_MS 1000
 
-int main(void)
-{
-  /* set pin 5 of PORTB for output*/
+int main(void) {
+  /* set pin 5 of PORTB for output */
   DDRB |= (1 << DDB5);
 
-  while (1)
-  {
-    /* turn LED on */
-    PORTB |= (1 << PORTB5);
-    _delay_ms(BLINK_DELAY_MS);
-
-    /* turn LED off */
-    PORTB &= ~(1 << PORTB5);
+  while (1) {
+    /* toggle pin 5 to turn LED on/off */
+    PORTB ^= (1 << PORTB5);
     _delay_ms(BLINK_DELAY_MS);
   }
 }

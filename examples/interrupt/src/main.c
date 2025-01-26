@@ -1,14 +1,12 @@
-#include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/io.h>
 
-ISR(INT0_vect)
-{
+ISR(INT0_vect) {
   // Toggle LED on interrupt
   PORTB ^= (1 << PORTB5);
 }
 
-int main(void)
-{
+int main(void) {
   // set LED as output
   DDRB |= (1 << DDB5);
 
@@ -21,8 +19,7 @@ int main(void)
   EIMSK |= (1 << INT0);
   sei();
 
-  while (1)
-  {
+  while (1) {
     /* do nothing */
   }
 }

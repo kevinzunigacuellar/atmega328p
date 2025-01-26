@@ -13,8 +13,12 @@ export default defineConfig({
       customCss: ["./src/styles/custom.css"],
       sidebar: [
         {
-          label: "Start here",
-          items: ["introduction", "setup", "gpio"],
+          label: "Concepts",
+          items: ["introduction","concepts/bitwise-operations"],
+        },
+        {
+          label: "Basics",
+          items: ["setup", "gpio"],
         },
       ],
     }),
