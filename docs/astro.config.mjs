@@ -7,9 +7,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "ATmega328P",
-      social: {
-        github: "https://github.com/kevinzunigacuellar/atmega328p",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/kevinzunigacuellar/atmega328p",
+        }
+      ],
       customCss: ["./src/styles/custom.css"],
       sidebar: [
         {
