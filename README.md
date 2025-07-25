@@ -7,4 +7,3 @@ This repository contains examples of bare metal programming on ATmega328P microc
 - [Blink](blink/README.md)
 - [Button](button/README.md)
 - [Interrupt](interrupt/README.md)
-
